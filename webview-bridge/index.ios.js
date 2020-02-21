@@ -22,7 +22,6 @@ var ReactNative = require('react-native');
 var invariant = require('invariant');
 var keyMirror = require('keymirror');
 var resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
-var WebView = require('react-native-webview');
 
 var {
   ActivityIndicator,
@@ -30,12 +29,16 @@ var {
   StyleSheet,
   Text,
   View,
+  // WebView,
   requireNativeComponent,
   UIManager,
   NativeModules: {
     WebViewBridgeManager
   }
 } = ReactNative;
+
+// import WebView from react-native-webview instead of from react-native
+import WebView from 'react-native-webview';
 
 var BGWASH = 'rgba(255,255,255,0.8)';
 var RCT_WEBVIEWBRIDGE_REF = 'webviewbridge';
