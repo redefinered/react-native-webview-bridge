@@ -37,6 +37,9 @@ var {
   }
 } = ReactNative;
 
+// import WebView from react-native-webview instead of from react-native
+import WebView from 'react-native-webview';
+
 var BGWASH = 'rgba(255,255,255,0.8)';
 var RCT_WEBVIEWBRIDGE_REF = 'webviewbridge';
 
